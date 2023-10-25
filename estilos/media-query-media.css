@@ -20,12 +20,6 @@
         text-align: center;
     }
 
-    .areacontato {
-        align-self: center;
-        text-align: center;
-        
-    }
-
     .sobre-nos {
         display: block;
         align-items: center;
@@ -41,6 +35,21 @@
         margin-left: 0px;
         margin-top: 2rem;
 
+    }
+
+    .profissionais {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profissionais h2 {
+        margin-top: 2rem;
+    }
+
+    .areacontato {
+        align-self: center;
+        text-align: center;        
     }
 
     .formcontato p {
