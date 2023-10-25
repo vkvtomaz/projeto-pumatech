@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+
+:root {
+    --cor0:#222f3d;
+    --cor1:#34495e;
+    --cor2:#46627f;
+    --cor3:#aacfd0;
+    --cor4:#cbe2e2;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cor0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menu */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 30px;
+    background-color: var(--cor2);
+}
+
+i#burguer {
+    display: none;
+}
+
+li.navmenu {
+    display: inline-block;
+    margin: 20px;
+}
+
+a.nav {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #222f3d;
+    
+}
+
+a.nav:hover {
+    color: #aacfd0;
+    transition: 0.5s all;
+}
+
+/* first-section */
+
+.first-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)) ,url(../imagens/fundotec.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section h1 {
+    color: #aacfd0;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+.first-section h2 {
+    color: #46627f;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #46627f;;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+.btn button:hover {
+    border: 1px solid var(--cor0);
+    background-color: #aacfd0;
+    color: var(--cor0);
+    transition: 400ms all;
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Sobre nós */
+
+.sobre-nos {
+    width: 100%;
+    padding-bottom: 5rem;
+    color: #aacfd0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border-radius: 75px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.contentsobre p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+}
+
+/* grid serviços */
+
+.serviços {
+    width: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)) ,url(../imagens/fundotec2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviços h2 {
+    font-size: 6rem;
+    color: #aacfd0;
+    margin-top: 20px;
+}
+
+.itens-serviço {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.itens-serviço .info {
+    background-color:#222f3d33;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-serviço .info h3 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #aacfd0;
+}
+
+.itens-serviço .info p {
+    font-size: 2rem;
+    color: #aacfd0;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.itens-serviço img {
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.itens-serviço .info .saiba-mais {
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    background-color: var(--cor2);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #aacfd0;
+    border-radius: 5px;
+    transition: all 200ms ease-in;
+}
+
+.itens-serviço .info .saiba-mais:hover {
+    background-color: #cbe2e2;
+    color: #222f3d;
+}
+
+/* profissionais */
+
+.profissionais {
+    width: 100%;
+    padding-bottom: 5rem;
+    color: #aacfd0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profissionais img {
+    width: 250px;
+    height: 250px;
+    margin-top: 3rem;
+    margin-left: 1.3rem;
+    border-radius: 150px;
+}
+
+.main-profissionais {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentprofissionais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentprofissionais h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.contentprofissionais h3 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.contentprofissionais p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+}
+
+.img-profissional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-profissional h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;    
+}
+
+.img-profissional p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+/* portfolio */
+
+
+
+/* contato */
+
+.areacontato {
+    width: 100%;
+    padding-bottom: 5rem;
+    color: #aacfd0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.areacontato img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border-radius: 75px;
+}
+
+.maincontato {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formcontato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formcontato h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.formcontato p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+}
+
+.formcontato form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.formcontato form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: var(--cor3);
+    color: black;
+    font-weight: bold;
+}
+
+.formcontato form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+.formcontato input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--cor2);
+    font: 1.8em;
+    color:var(--cor0);
+    padding-bottom: 1rem;    
+}
+
+footer img {
+    width: 250px;
+    margin-top: 1rem;
+}
+
+.links {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+.links a:hover {
+    color:#007bff;
+    transition: 600ms all;
+}
+
+.pfoot {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor0);  
+    text-align: center; 
+}

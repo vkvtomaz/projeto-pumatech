@@ -1,0 +1,26 @@
+@media screen and (max-width: 930px) {
+    
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    i#burguer {
+        display: block;
+        color:#aacfd0;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+    }
+
+    a.nav {
+        display: block;
+        text-align: center;
+    }
+}
