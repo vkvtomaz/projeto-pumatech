@@ -1,0 +1,61 @@
+@media (max-width: 1200px) {
+    
+    header {
+        flex-direction: column;
+    }
+
+    i#burguer {
+        display: block;
+        color:#aacfd0;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+    }
+
+    a.nav {
+        display: block;
+        text-align: center;
+    }
+
+    .areacontato {
+        align-self: center;
+        text-align: center;
+        
+    }
+
+    .sobre-nos {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre-nos h2 {
+        margin-top: 2rem;
+    }
+
+    .sobre-nos img {
+        width: 480px;
+        margin-left: 0px;
+        margin-top: 2rem;
+
+    }
+
+    .formcontato p {
+        align-self: center;
+        text-align: center;
+        max-width: 350px;
+    }
+
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input {
+        align-self: center;
+    }
+    
+}
