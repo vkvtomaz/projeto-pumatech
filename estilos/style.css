@@ -189,7 +189,7 @@ a.nav:hover {
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 450px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     justify-content: center;
     align-items: center;
     text-align: center;
