@@ -24,4 +24,9 @@
         text-align: center;
         width: 500px;
     }
+
+    .imgcontato img {
+        display: none;
+
+    }
 }
