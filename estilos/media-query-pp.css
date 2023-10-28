@@ -6,4 +6,8 @@
     .imgcontato {
         display: none;
     }
+
+    .itens-serviço {
+        grid-template-columns: repeat(2, minmax(50px, 350px));
+    }
 }
