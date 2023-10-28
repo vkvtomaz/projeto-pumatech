@@ -1,0 +1,44 @@
+@media (max-width: 500px) {
+    
+
+    .btn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+    }
+
+    .btn button {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .conteudo-principal h1 {
+        width: 350px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .conteudo-principal h2 {
+        width: 200px;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 5px;
+
+    }
+
+    .sobre-nos p {
+        width: 450px;
+        text-align: center;
+    }
+
+    .profissionais p {
+        width: 450px;
+        text-align: center;
+    }
+
+    .imgcontato img {
+        display: none;
+
+    }
+}

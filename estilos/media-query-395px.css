@@ -1,0 +1,21 @@
+@media (max-width: 395px) {
+    .sobre-nos img {
+        width: 250px;
+        height: 240px;
+        margin-left: 10px;
+    }
+
+    .sobre-nos p {
+        width: 300px;
+        text-align: center;
+    }
+
+    .profissionais img {
+        width: 200px;
+        height: auto;
+    }
+
+    .profissionais p {
+        width: 350px;
+    }
+}
