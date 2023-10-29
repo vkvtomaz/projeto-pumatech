@@ -125,10 +125,48 @@
     </section>
 
     <section class="portfolio" id="portfolio">
-        <h2>Portfolio</h2>
-        <h3>Desenvolvimento Web</h3>
-        <p>Aqui está alguns de nossos projetos em Desenvolvimento Web.</p>
+        <div class="mainportf">
+            <div class="contentportf">
+                <h2>Portfolio</h2>
+                <h3>Desenvolvimento Web</h3>
+                <p>Aqui está alguns de nossos projetos em Desenvolvimento Web.</p>
+            </div>
+            <section class="slider">
+                <div class="slider-content">
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
 
+                    <div class="slide-box primeiro">
+                        <img class="img-desktop" src="imagens/portf1g.JPG" alt="slide 1">
+                        <img class="img-mobile" src="imagens/portf1mob.jpeg" alt="slide 1">
+                    </div>
+
+                    <div class="slide-box">
+                        <img class="img-desktop" src="imagens/portf2g.JPG" alt="slide 2">
+                        <img class="img-mobile" src="imagens/portf2mob.jpeg" alt="slide 2">
+                    </div>
+
+                    <div class="slide-box">
+                        <img class="img-desktop" src="imagens/portf3g.JPG" alt="slide 3">
+                        <img class="img-mobile" src="imagens/portf3mob.jpeg" alt="slide 3">
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+
+                </div>
+            </section>
+        
     </section>
 
     <section class="areacontato" id="areacontato">
@@ -173,6 +211,28 @@
             } else {
                 itens.style.display = 'block'
             }
+        }
+    </script>
+
+    <script>
+        var radio = document.querySelector('.manual.btn')
+        var cont = 1
+
+        document.getElementById('radio1').checked = true
+
+        setInterval(() => {
+            proximaImg()
+        }, 4000)
+
+        function proximaImg(){
+            cont++
+
+            if(cont > 3){
+                cont = 1
+            }
+            
+            document.getElementById('radio'+cont).checked = true
+
         }
     </script>
 

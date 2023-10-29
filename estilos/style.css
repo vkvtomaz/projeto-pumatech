@@ -317,6 +317,108 @@ a.nav:hover {
 
 /* portfolio */
 
+.portfolio {
+    width: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)) ,url(../imagens/fundotec3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentportf h2 {
+    text-align: center;
+    font-size: 6rem;
+    color: #aacfd0;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.contentportf h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: #aacfd0;
+}
+
+.contentportf p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #aacfd0;
+    margin-bottom: 20px;
+}
+
+/* slide do carrossel */
+
+.slider {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+.slider-content input, .img-mobile {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 100%;
+    box-shadow: 2px 2px 2px #222f3d;
+}
+
+
+
+.nav-manual .manualbtn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manualbtn:hover {
+    background-color: #aacfd0;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color:#aacfd0;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn3{
+    background-color:#aacfd0;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn3{
+    background-color:#aacfd0;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -50%;
+}
+
 
 
 /* contato */
